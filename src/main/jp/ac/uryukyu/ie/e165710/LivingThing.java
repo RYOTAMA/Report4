@@ -35,7 +35,7 @@ public class LivingThing {
         hitPoint -= damage;
         if( hitPoint < 0 ) {
             dead = true;
-            System.out.printf("%sは道半ばで精力を搾り取られた。\n", name);
+            System.out.printf("%sは倒れた。\n", name);
         }
     }
     public boolean getdead(){
