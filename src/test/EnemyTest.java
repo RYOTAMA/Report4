@@ -4,7 +4,14 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class EnemyTset {
+/**
+ * Created by tnal on 2016/11/13.
+ */
+public class EnemyTest {
+    /**
+     * 「死んでる状態では攻撃できない」ことを確認。
+     * @throws Exception
+     */
     @Test
     public void attack() throws Exception {
         int heroHP = 10;
@@ -16,4 +23,5 @@ public class EnemyTset {
         }
         assertEquals(heroHP, hero.hitPoint);
     }
+
 }
